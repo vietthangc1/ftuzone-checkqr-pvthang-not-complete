@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-(l4la#+^9_r_xe(jigm0j0o9n8&&95&_6)qxe9v_jjvfj)$e$w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['checkTicket.checkapp.com']
 
 
 # Application definition
