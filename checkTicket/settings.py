@@ -151,4 +151,4 @@ QR_CODE_CACHE_ALIAS = 'qr-code'
 
 django_heroku.settings(locals())
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-ALLOWED_HOSTS = ['herokudjangoapp.herokuapp.com']
+ALLOWED_HOSTS = ['ftuzone-checkqr-pvthang.herokuapp.com']
