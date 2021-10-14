@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-(l4la#+^9_r_xe(jigm0j0o9n8&&95&_6)qxe9v_jjvfj)$e$w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['checkTicket.checkapp.com']
+ALLOWED_HOSTS = ['checkTicket.checkapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'whitenoise.storage.CompressedManifestStaticFilesStorage',
+    # 'whitenoise.storage.CompressedManifestStaticFilesStorage',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -128,7 +128,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [static_dir,]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = media_dir
+MEDIA_ROOT = [media_dir,]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -149,6 +149,6 @@ CACHES = {
 
 QR_CODE_CACHE_ALIAS = 'qr-code'
 
-django_heroku.settings(locals())
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-ALLOWED_HOSTS = ['ftuzone-checkqr-pvthang.herokuapp.com']
+# django_heroku.settings(locals())
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# ALLOWED_HOSTS = ['ftuzone-checkqr-pvthang.herokuapp.com']
